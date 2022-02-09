@@ -23,6 +23,12 @@ p {
 	display: inline-block;
 	align: center;
 	position: relative;
+	cursor: default;
+}
+
+.box p {
+	
+	cursor: default;
 }
 
 .topbar {
@@ -54,6 +60,11 @@ p {
 	background-color: #422;
 }
 
+.topbar p {
+	
+	cursor: default;
+}
+
 .button {
 
 	display: inline-block;
@@ -63,6 +74,7 @@ p {
 	border-style: solid;
 	border-radius: 10px;
 	cursor: pointer;
+	width: 15%;
 }
 
 .button:hover {
