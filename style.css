@@ -10,6 +10,12 @@ body {
 	background-repeat: repeat;
 }
 
+/* elements other than the top navbar */
+.elems {
+	
+	align: center;
+}
+
 p {
 
 	color: #fdd;
@@ -18,10 +24,11 @@ p {
 .box {
 
 	padding: 10px;
-	background-color: #422;
+	background-color: #750022;
 	width: 50%;
 	display: inline-block;
-	align: center;
+	/* align: center; */
+	/* float: center; */
 	position: relative;
 	cursor: default;
 }
@@ -43,7 +50,7 @@ p {
 .topbar a {
 
 	color: #fdd;
-	background-color: #755;
+	background-color: #9C0044;
 	position: relative;
 	display: inline-block;
 	padding: 10px;
@@ -52,12 +59,12 @@ p {
 
 .topbar a:hover {
 
-	background-color: #533;
+	background-color: #83033B;
 }
 
 .topbar a:active {
 
-	background-color: #422;
+	background-color: #DB0060;
 }
 
 .topbar p {
@@ -69,8 +76,8 @@ p {
 
 	display: inline-block;
 	border-width: 5px;
-	border-color: #581A1A;
-	background-color: #622;
+	border-color: #83033B;
+	background-color: #9C0044;
 	border-style: solid;
 	border-radius: 10px;
 	cursor: pointer;
@@ -79,13 +86,13 @@ p {
 
 .button:hover {
 
-	background-color: #581A1A;
+	background-color: #83033B;
 }
 
 .button:active {
 
-	border-color: #401515;
-	background-color: #401515;
+	border-color: #65002C;
+	background-color: #65002C;
 }
 
 .button a {
@@ -113,5 +120,5 @@ p {
 a {
 
 	text-decoration: none;
-	color: #a99;
+	color: #dbb;
 }
