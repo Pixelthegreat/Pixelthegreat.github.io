@@ -1,0 +1,33 @@
+body {
+	background-color: #EEE;
+	font-family: MonoSpace;
+	text-align: center;
+	font-size: 16px;
+}
+
+.topbar {
+	border: solid;
+	border-width: 4;
+	border-color: #AAA;
+	background-color: #CCC;
+	text-align: left;
+}
+
+.topbar a {
+	padding: 2px;
+}
+
+a {
+	text-decoration: underline;
+	color: black;
+}
+
+.box {
+	width: 50%;
+	display: inline-block;
+	float: center;
+	background-color: #DDD;
+	border: solid;
+	border-width: 4;
+	border-color: #BBB;
+}
