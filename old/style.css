@@ -5,10 +5,16 @@ body {
 	font-family: Monospace;
 	font-size: 15px;
 	/* font-family: Sans-Serif; */
+}
+
+.background {
 	background-color: #522;
 	text-align: center;
 	background-image: url("two.jpg");
 	background-repeat: repeat;
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+	height: 100%;
 }
 
 /* elements other than the top navbar */
