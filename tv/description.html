@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>OLive</title>
+	<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+	<div class="topbar">
+		<a href="main.html">Home</a><a href="saved.html">Saved channels</a>
+	</div>
+	<h2 id="channel-name"></h2>
+	<h3>Current program</h3>
+	<a href="live.html"><div class="image"><img id="current-program"/></div></a>
+	<h4 id="current-program-name"></h4>
+	<h3><a href="ondemand.html">On Demand</a></h3>
+	<span id="channel-on-demand-shows"></span>
+	
+	<div id="show-description" class="sidenav">
+		<a href="javascript:void(0)" onclick="hidedescription()" style="float:left;">x</a>
+		<h2 id="show-name"></h2>
+		<p id="show-description-text"></p>
+		<h3>Watch</h3>
+		Season<br>
+		<select id="show-seasons"></select><br>
+		Episode<br>
+		<select id="show-episodes"></select><br><br>
+		<a href="javascript:void(0)" onclick="watchshow()">Watch</a>
+	</div>
+</body>
+<script src="data.js"></script>
+<script src="description.js"></script>
+</html>

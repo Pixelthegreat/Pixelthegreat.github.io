@@ -1,0 +1,145 @@
+body {
+	text-align: center;
+	font-family: Sans;
+	color: #222;
+}
+
+input {
+	transition: 100ms;
+	color: #555;
+	font-size: 32px;
+	border: solid;
+	background-color: white;
+	border-color: white;
+	border-radius: 5px;
+	margin: 5px;
+	width: 40%;
+	padding: 5px;
+	box-shadow: 0px 0px 5px 3px #aaa;
+}
+
+.button {
+	transition: 100ms;
+	color: #aaa;
+	font-size: 32px;
+	border: solid;
+	background-color: white;
+	border-color: white;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+	width: 40%;
+	display: inline-block;
+	box-shadow: 0px 0px 5px 3px #aaa;
+	cursor: pointer;
+}
+
+.button a {
+	text-decoration: none;
+}
+
+.button:hover, input:hover, select:hover {
+	background-color: #ddd;
+	border-color: #ddd;
+	transition: 200ms;
+}
+
+.button:active {
+	background-color: #ccc;
+	border-color: #ccc;
+	transition: 100ms;
+}
+
+a {
+	color: #333;
+}
+
+.a2 {
+	font-size: 10px;
+}
+
+.a3 {
+}
+
+.topbar {
+	background-color: white;
+	border: solid;
+	border-color: white;
+	border-radius: 3px;
+	border-width: 1px;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 0px 0px 5px 3px #aaa;
+}
+
+.topbar a {
+	padding: 7px;
+}
+
+.image {
+}
+
+.image img {
+	border-radius: 15px;
+	width: 20%;
+	transition: 200ms;
+	cursor: pointer;
+}
+.image img:hover {
+	opacity: 75%;
+	transition: 200ms;
+}
+
+.image img:active {
+	opacity: 50%;
+	transition: 200ms;
+}
+
+hr.solid {
+	width: 50%;
+	border-top: 1px solid #bbb;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	background-color: #eee;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 500ms;
+}
+
+.sidenav a {
+	padding: 8px;
+	text-decoration: none;
+	color: #555;
+	transition: 0.3s;
+	background-color: #bbb;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.sidenav a:hover {
+	color: #333;
+	background-color: #aaa;
+}
+
+select {
+	transition: 100ms;
+	color: #555;
+	font-size: 32px;
+	border: solid;
+	background-color: white;
+	border-color: white;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+	width: 40%;
+	box-shadow: 0px 0px 5px 3px #aaa;
+	cursor: pointer;
+}
