@@ -78,20 +78,23 @@ a {
 }
 
 .image {
-}
-
-.image img {
-	border-radius: 15px;
-	width: 20%;
-	transition: 200ms;
 	cursor: pointer;
 }
-.image img:hover {
+.image_unclick {
+	cursor: default;
+}
+
+.image img, .image_unclick img {
+	border-radius: 15px;
+	transition: 200ms;
+	width: 20%;
+}
+.image:hover img {
 	opacity: 75%;
 	transition: 200ms;
 }
 
-.image img:active {
+.image:active img {
 	opacity: 50%;
 	transition: 200ms;
 }

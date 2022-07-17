@@ -19,6 +19,7 @@ function showdescription(show) {
 	/* set elements */
 	elem_show_name.innerHTML = name;
 	elem_show_description_text.innerHTML = desc;
+	elem_show_image.setAttribute('src', 'thumbs/' + channel + '/' + show + '.png');
 	
 	/* get season and episode lengths */
 	var n_seasons = show_lengths[show][0];
@@ -68,6 +69,7 @@ const elem_current_program = document.getElementById('current-program');
 const elem_current_program_name = document.getElementById('current-program-name');
 const elem_channel_on_demand_shows = document.getElementById('channel-on-demand-shows');
 const elem_show_description = document.getElementById('show-description');
+const elem_show_image = document.getElementById('show-image');
 const elem_show_name = document.getElementById('show-name');
 const elem_show_description_text = document.getElementById('show-description-text');
 const elem_show_seasons = document.getElementById('show-seasons');

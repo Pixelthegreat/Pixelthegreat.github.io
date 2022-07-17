@@ -20,6 +20,17 @@ body {
 a {
 	text-decoration: underline;
 	color: black;
+	transition: 200ms;
+	padding: 1px;
+}
+a:hover {
+	background-color: #CCC;
+	border-radius: 4px;
+	transition: 200ms;
+}
+.topbar a:hover {
+	background: none;
+	border: none;
 }
 
 .box {
