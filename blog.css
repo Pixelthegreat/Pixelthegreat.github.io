@@ -1,0 +1,15 @@
+/* main css for blog stuff */
+.popup {
+	width: 100%;
+	background-color: #ddd;
+	max-height: 0;
+	display: block;
+	overflow: hidden;
+	transition: max-height 150ms ease-out;
+}
+.popup a:hover {
+	background-color: #bbb;
+}
+p#undefined {
+	display: none; /* to store text loaded by jquery */
+}
