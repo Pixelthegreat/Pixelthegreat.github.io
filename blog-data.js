@@ -5,6 +5,9 @@ const article_list_2022 = {
 		21: 'Fake News Thursday',
 		28: 'Fake News Thursday',
 	},
+	'August': {
+		4: 'Fake News Thursday',
+	},
 };
 const article_list = {
 	2022: article_list_2022,
