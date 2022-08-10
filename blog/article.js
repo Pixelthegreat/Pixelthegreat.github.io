@@ -29,7 +29,7 @@ const formal_title = month + ' ' + day + day_endings[day.charAt(day.length - 1)]
 console.log(formal_title);
 
 /* load file */
-const path = 'blog/year/' + year + '/' + month + '/' + day + '.md';
+const path = 'year/' + year + '/' + month + '/' + day + '.md';
 
 console.log(path);
 
