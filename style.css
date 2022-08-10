@@ -42,3 +42,46 @@ a:hover {
 	border-width: 4;
 	border-color: #BBB;
 }
+
+.square-grid {
+	float: center;
+	width: 70%;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+}
+
+.square-grid div {
+}
+
+.square-grid div img {
+	width: 100%;
+	transition: 250ms;
+	border-radius: 10%;
+	cursor: pointer;
+}
+
+.square-grid div img:hover {
+	transition: 250ms;
+	border-radius: 5%;
+	opacity: 75%;
+}
+
+.square-grid div img:active {
+	transition: 250ms;
+	opacity: 50%;
+}
+
+#popup {
+	margin: 0;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	position: fixed;
+	background-color: rgba(.8, .8, .8, .2);
+	backdrop-filter: blur(6px);
+	width: 100%;
+	height: 0;
+	transition: 300ms;
+	overflow: hidden;
+}

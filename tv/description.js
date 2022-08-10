@@ -113,7 +113,7 @@ for (show_index in channel_shows[channel]) {
 	console.log(show);
 	
 	/* add show thumbnail */
-	span_text += '<div class="image" onclick="showdescription(\'' + show + '\')"><img src="thumbs/' + channel + '/' + show + '.png"/></div><h4>' + show_proper_names[show] + '</h4><hr class="solid">';
+	span_text += '<div class="image" onclick="showdescription(\'' + show + '\')"><img src="thumbs/' + channel + '/' + show + '.png"/><h4>' + show_proper_names[show] + '</h4></div>';
 }
 
 /* display shows */
