@@ -18,6 +18,7 @@ const albums = {
 	'hawaiipartii': {'name': 'Hawaii: Part II', 'band': 'Miracle Musical', 'band-lower': 'miraclemusical'},
 	'joehawleyjoehawley': {'name': 'Joe Hawley Joe Hawley', 'band': 'Joe Hawley', 'band-lower': 'joehawley'},
 	'thefamilyjewels': {'name': 'The Family Jewels', 'band': 'MARINA', 'band-lower': 'marina'},
+	'3': {'name': '3', 'band': 'Tricot', 'band-lower': 'tricot'},
 };
 
 /* get element */
