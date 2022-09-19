@@ -1,24 +1,24 @@
 /* main script for loading image data into music.html */
 const albums = {
-	'showbiz': {'name': 'Showbiz', 'band': 'Muse', 'band-lower': 'muse'},
-	'originofsymmetry': {'name': 'Origin of Symmetry', 'band': 'Muse', 'band-lower': 'muse'},
-	'theresistance': {'name': 'The Resistance', 'band': 'Muse', 'band-lower': 'muse'},
-	'thebends': {'name': 'The Bends', 'band': 'Radiohead', 'band-lower': 'radiohead'},
-	'okcomputer': {'name': 'OK Computer', 'band': 'Radiohead', 'band-lower': 'radiohead'},
-	'inrainbows': {'name': 'In Rainbows', 'band': 'Radiohead', 'band-lower': 'radiohead'},
-	'allweknowisfalling': {'name': 'All We Know Is Falling', 'band': 'Paramore', 'band-lower': 'paramore'},
-	'brandneweyes': {'name': 'Brand New Eyes', 'band': 'Paramore', 'band-lower': 'paramore'},
-	'fanfavoritessofar': {'name': 'Fan Favorites So Far', 'band': 'Wendy Ip', 'band-lower': 'wendyip'},
-	'adifferentkindoflife': {'name': 'A Different Kind of Life', 'band': 'Wendy Ip', 'band-lower': 'wendyip'},
-	'theipep': {'name': 'The Ip EP', 'band': 'Wendy Ip', 'band-lower': 'wendyip'},
-	'acoustics': {'name': 'Acoustics EP', 'band': 'Yvette Young', 'band-lower': 'yvetteyoung'},
-	'currents': {'name': 'Currents', 'band': 'Covet', 'band-lower': 'covet'},
-	'marvins': {'name': 'Marvin\'s Marvelous Mechanical Museum', 'band': 'Tally Hall', 'band-lower': 'tallyhall'},
-	'goodandevil': {'name': 'Good & Evil', 'band': 'Tally Hall', 'band-lower': 'tallyhall'},
-	'hawaiipartii': {'name': 'Hawaii: Part II', 'band': 'Miracle Musical', 'band-lower': 'miraclemusical'},
-	'joehawleyjoehawley': {'name': 'Joe Hawley Joe Hawley', 'band': 'Joe Hawley', 'band-lower': 'joehawley'},
-	'thefamilyjewels': {'name': 'The Family Jewels', 'band': 'MARINA', 'band-lower': 'marina'},
-	'3': {'name': '3', 'band': 'Tricot', 'band-lower': 'tricot'},
+	'showbiz': {'name': 'Showbiz', 'band': 'Muse'},
+	'originofsymmetry': {'name': 'Origin of Symmetry', 'band': 'Muse'},
+	'theresistance': {'name': 'The Resistance', 'band': 'Muse'},
+	'thebends': {'name': 'The Bends', 'band': 'Radiohead'},
+	'okcomputer': {'name': 'OK Computer', 'band': 'Radiohead'},
+	'inrainbows': {'name': 'In Rainbows', 'band': 'Radiohead'},
+	'allweknowisfalling': {'name': 'All We Know Is Falling', 'band': 'Paramore'},
+	'brandneweyes': {'name': 'Brand New Eyes', 'band': 'Paramore'},
+	'fanfavoritessofar': {'name': 'Fan Favorites So Far', 'band': 'Wendy Ip'},
+	'adifferentkindoflife': {'name': 'A Different Kind of Life', 'band': 'Wendy Ip'},
+	'theipep': {'name': 'The Ip EP', 'band': 'Wendy Ip'},
+	'acoustics': {'name': 'Acoustics EP', 'band': 'Yvette Young'},
+	'currents': {'name': 'Currents', 'band': 'Covet'},
+	'marvins': {'name': 'Marvin\'s Marvelous Mechanical Museum', 'band': 'Tally Hall'},
+	'goodandevil': {'name': 'Good & Evil', 'band': 'Tally Hall'},
+	'hawaiipartii': {'name': 'Hawaii: Part II', 'band': 'Miracle Musical'},
+	'joehawleyjoehawley': {'name': 'Joe Hawley Joe Hawley', 'band': 'Joe Hawley'},
+	'thefamilyjewels': {'name': 'The Family Jewels', 'band': 'MARINA'},
+	'_3': {'name': '3', 'band': 'Tricot'},
 };
 
 /* get element */
@@ -28,7 +28,7 @@ const elem_popup = document.getElementById('popup');
 /* open popup */
 function popup_open(name) {
 	elem_popup.style.height = '100%';
-	elem_popup.innerHTML = '<br><a href="javascript:void(0)" onclick="popup_close()">close</a><br><br><img style="width: 20%; border-radius: 10%;" src="images/music/albums/' + name + '.png"/><h3>' + albums[name]['name'] + '</h3>by <a href="music/' + albums[name]['band-lower'] + '.html"><i>' + albums[name]['band'] + '</i></a>';
+	elem_popup.innerHTML = '<br><a href="javascript:void(0)" onclick="popup_close()">close</a><br><br><img style="width: 20%; border-radius: 10%;" src="images/music/albums/' + name.replace('_','') + '.png"/><h3>' + albums[name]['name'] + '</h3>by <a href="music/' + albums[name]['band'].toLowerCase().replace(' ','') + '.html"><i>' + albums[name]['band'] + '</i></a>';
 }
 
 /* close popup */
@@ -43,7 +43,7 @@ var text = '';
 for (key in albums) {
 
 	/* set image */
-	text += '<div onclick="popup_open(\'' + key + '\')"><img src="images/music/albums/' + key + '.png"/></div>';
+	text += '<div onclick="popup_open(\'' + key + '\')"><img src="images/music/albums/' + key.replace('_','') + '.png"/></div>';
 }
 
 elem_albums.innerHTML = text;
