@@ -118,6 +118,10 @@ hr.solid {
 	transition: 500ms;
 }
 
+.sidenav img {
+	width: 10%;
+}
+
 .sidenav a {
 	padding: 8px;
 	text-decoration: none;
@@ -149,6 +153,13 @@ select {
 }
 
 .show-grid {
-	display: grid;
-	grid-auto-columns: 3fr;
+	float: center;
+	width: 90%;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px;
+}
+
+.show-grid .image {
+	width: 100%;
 }
