@@ -1,0 +1,91 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: Monospace;
+	font-size: 15px;
+	background-color: black;
+	color: #eee;
+	text-align: center;
+}
+p.nocur {
+	cursor: default;
+}
+a {
+	text-decoration: none;
+	transition: color 150ms;
+	color: #eee;
+}
+a:hover {
+	transition: color 150ms;
+	color: #bbb;
+}
+#navbar {
+	text-align: center;
+	width: 75%;
+	float: center;
+	display: inline-block;
+	height: auto;
+	border-bottom: 1px solid white;
+}
+#navbar a {
+	position: relative;
+	color: white;
+	display: inline-block;
+	margin: 20px;
+	font-size: 25px;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	transition: 150ms;
+}
+/*#navbar a:hover {
+	color: white;
+	text-decoration-color: white;
+}*/
+#navbar a:after {
+	content: '';
+	position: absolute;
+	background-color: white;
+	height: 2px;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	transition: 150ms ease-out;
+}
+#navbar a:hover:after {
+	width: 100%;
+	left: 0;
+}
+/* text content, usually */
+.content {
+	display: inline-block;
+	width: 50%;
+	float: center;
+}
+/* image */
+.album-thumb {
+	position: relative;
+	display: inline-block;
+	float: center;
+	width: 300px;
+}
+.album-thumb img {
+	width: 100%;
+	border-radius: 5%;
+	transition: opacity 150ms;
+}
+.album-thumb p {
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	transform: translate(0, -50%);
+	opacity: 0;
+	transition: opacity 150ms;
+	width: 250px;
+}
+.album-thumb:hover img {
+	opacity: 75%;
+}
+.album-thumb:hover p {
+	opacity: 100%;
+}
