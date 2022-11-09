@@ -11,6 +11,9 @@ const article_list_2022 = {
 	'October': {
 		31: 'Hanukkah Man',
 	},
+	/*'November': {
+		8: 'Wendy Ip',
+	},*/
 };
 const article_list = {
 	2022: article_list_2022,

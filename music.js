@@ -17,8 +17,10 @@ const albums = {
 	'goodandevil': {'name': 'Good & Evil', 'band': 'Tally Hall'},
 	'hawaiipartii': {'name': 'Hawaii: Part II', 'band': 'Miracle Musical'},
 	'joehawleyjoehawley': {'name': 'Joe Hawley Joe Hawley', 'band': 'Joe Hawley'},
-	'thefamilyjewels': {'name': 'The Family Jewels', 'band': 'MARINA'},
+	'thefamilyjewels': {'name': 'The Family Jewels', 'band': 'Marina & the diamonds'},
+	'grace': {'name': 'Grace', 'band': 'Jeff Buckley'},
 	'_3': {'name': '3', 'band': 'Tricot'},
+	'makkuro': {'name': '真っ黒', 'band': 'Tricot'},
 };
 
 /* get element */
