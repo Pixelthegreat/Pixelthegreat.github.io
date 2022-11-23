@@ -1,91 +1,64 @@
-html {
-	scroll-behavior: smooth;
-}
 body {
-	font-family: Monospace;
-	font-size: 15px;
-	background-color: black;
-	color: #eee;
 	text-align: center;
+	font-family: serif;
 }
-p.nocur {
-	cursor: default;
+div#main-section {
+	width: 50%;
+	float: center;
+	display: inline-block;
+	background-color: #aaa;
+}
+div#navbar {
+	width: 100%;
+	text-align: center;
+	background-color: #888;
+}
+div.navlink {
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 a {
 	text-decoration: none;
-	transition: color 150ms;
-	color: #eee;
+	color: #444;
 }
 a:hover {
-	transition: color 150ms;
-	color: #bbb;
-}
-#navbar {
-	text-align: center;
-	width: 75%;
-	float: center;
-	display: inline-block;
-	height: auto;
-	border-bottom: 1px solid white;
-}
-#navbar a {
-	position: relative;
-	color: white;
-	display: inline-block;
-	margin: 20px;
-	font-size: 25px;
+	color: #333;
 	text-decoration: underline;
-	text-decoration-color: transparent;
-	transition: 150ms;
 }
-/*#navbar a:hover {
+div.navlink a {
 	color: white;
-	text-decoration-color: white;
-}*/
-#navbar a:after {
-	content: '';
-	position: absolute;
-	background-color: white;
-	height: 2px;
-	width: 0;
-	left: 50%;
-	bottom: 0;
-	transition: 150ms ease-out;
+	text-decoration: none;
 }
-#navbar a:hover:after {
+div.navlink:hover {
+	background-color: #999;
+}
+div.navlink:hover a {
+	text-decoration: underline;
+}
+#banner {
+	background-image: url("ep-02.png");
+	background-repeat: none;
+	background-position: center;
+	background-size: cover;
 	width: 100%;
-	left: 0;
+	height: 150px;
 }
-/* text content, usually */
-.content {
+div.album {
 	display: inline-block;
-	width: 50%;
-	float: center;
+	width: 20%;
+	margin: 14px;
+	border: 1px solid #999;
+	cursor: pointer;
 }
-/* image */
-.album-thumb {
+div.album img {
 	position: relative;
-	display: inline-block;
-	float: center;
-	width: 300px;
-}
-.album-thumb img {
 	width: 100%;
-	border-radius: 5%;
-	transition: opacity 150ms;
 }
-.album-thumb p {
-	position: absolute;
-	top: 50%;
-	left: 25px;
-	transform: translate(0, -50%);
-	opacity: 0;
-	transition: opacity 150ms;
-	width: 250px;
+div.album:hover {
+	border-color: #ccc;
 }
-.album-thumb:hover img {
-	opacity: 75%;
-}
-.album-thumb:hover p {
-	opacity: 100%;
+div.albums {
 }
