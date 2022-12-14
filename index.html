@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>fanfavoritessofar.com</title>
 	<link rel="stylesheet" href="style.css"/>
+	<script src="blog/blog-data.js"></script>
 </head>
 <body>
 <div class="topbar">
@@ -18,6 +19,29 @@
 This is my website<br><br>
 It was named after an album
 <h2>Blog</h2>
-<a href="blog/blog.html">Index</a>
+<a href="blog/blog.html">Index</a><br>
+<a id="article-latest" href=""></a>
+<h3>Archive</h3>
+<a href="blog/archive.html">Archive</a>
+<h2>Stuff</h2>
+<div id="stuff-grid">
+<div class="stuff-grid-div" id="stuff-grid-one"><a href="music.html">Music</a></div>
+<div class="stuff-grid-div" id="stuff-grid-two"><a href="funny.html">Funny Stuff</a></div>
+<div class="stuff-grid-div" id="stuff-grid-three"><a href="tv/index.html">TV</a></div>
+<div class="stuff-grid-div" id="stuff-grid-four"><a href="blog/blog.html">Blog</a></div>
+<div class="stuff-grid-div" id="stuff-grid-five"><a href="about.html">About</a></div>
+</div>
 </body>
+<script>
+/* latest article */
+const elem_article_latest = document.getElementById('article-latest');
+
+var year = Object.keys(article_list).pop();
+var month = Object.keys(article_list[year]).pop();
+var day = Object.keys(article_list[year][month]).pop();
+var name = article_list[year][month][day];
+
+elem_article_latest.innerHTML = 'Latest Article: ' + name;
+elem_article_latest.href = 'blog/article.html?y=' + year + '&m=' + month + '&d=' + day;
+</script>
 </html>
