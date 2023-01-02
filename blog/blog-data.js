@@ -15,6 +15,12 @@ const article_list_2022 = {
 		8: 'Wendy Ip',
 	},*/
 };
+const article_list_2023 = {
+	'January': {
+		1: 'Happy New Years!!!',
+	}
+}
 const article_list = {
 	2022: article_list_2022,
+	2023: article_list_2023,
 };
