@@ -18,7 +18,11 @@ const article_list_2022 = {
 const article_list_2023 = {
 	'January': {
 		1: 'Happy New Years!!!',
-	}
+	},
+	'March': {
+		15: 'Annual Autumn Short Story Contest',
+		16: 'Fake News Thursday',
+	},
 }
 const article_list = {
 	2022: article_list_2022,

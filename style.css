@@ -173,3 +173,7 @@ a:hover {
 #stuff-grid-five:before {
 	background-image: url("images/bg5.png");
 }
+
+img#banner-image {
+	width: 100%;
+}
