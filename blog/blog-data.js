@@ -23,6 +23,9 @@ const article_list_2023 = {
 		15: 'Annual Autumn Short Story Contest',
 		16: 'Fake News Thursday',
 	},
+	'June': {
+		19: 'The Old Mill by The Meadow',
+	}
 }
 const article_list = {
 	2022: article_list_2022,

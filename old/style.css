@@ -12,9 +12,6 @@ body {
 	text-align: center;
 	background-image: url("two.jpg");
 	background-repeat: repeat;
-	filter: blur(8px);
-	-webkit-filter: blur(8px);
-	height: 100%;
 }
 
 /* elements other than the top navbar */
