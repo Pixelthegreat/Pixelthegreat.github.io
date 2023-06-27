@@ -25,6 +25,7 @@ const article_list_2023 = {
 	},
 	'June': {
 		19: 'The Old Mill by The Meadow',
+		26: 'NO SOUP FOR YOU'
 	}
 }
 const article_list = {
