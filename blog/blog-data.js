@@ -28,9 +28,10 @@ const article_list_2023 = {
 		26: 'NO SOUP FOR YOU'
 	},
 	'July': {
-		17: 'Hedgewogs'
+		17: 'Hedgewogs',
+		31: 'The Red Elves'
 	}
-}
+};
 const article_list = {
 	2022: article_list_2022,
 	2023: article_list_2023,
