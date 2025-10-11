@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>fanfavoritessofar.com</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="blog/blog-data.js"></script>
+</head>
+<body>
+<div class="topbar">
+	<a href="index.html">Home</a>
+	<a href="music.html">Music</a>
+	<a href="funny.html">Funny</a>
+	<a href="tv/index.html">TV</a>
+	<a href="blog/blog.html">Blog</a>
+	<a href="about.html">About</a>
+</div>
+<h1>Hello</h1>
+This is my website<br><br>
+It was named after an album<br><br>
+Check out my <a href="https://katormusic.bandcamp.com">bandcamp</a>
+<h2>Blog</h2>
+I have officially decided to declare this blog obsolete.<br>
+For old content, see the index and archive sections of the site.<br>
+For new content, see <a href="https://absolutelynothing.substack.com/">my Substack newsletter</a>.<br><br>
+<a href="blog/blog.html">Index</a><br>
+<a id="article-latest" href=""></a>
+<h3>Archive</h3>
+<a href="blog/archive.html">Archive</a>
+<h2>Stuff</h2>
+<div id="stuff-grid">
+<div class="stuff-grid-div" id="stuff-grid-one"><a href="music.html">Music</a></div>
+<div class="stuff-grid-div" id="stuff-grid-two"><a href="funny.html">Funny Stuff</a></div>
+<div class="stuff-grid-div" id="stuff-grid-three"><a href="tv/index.html">TV</a></div>
+<div class="stuff-grid-div" id="stuff-grid-four"><a href="blog/blog.html">Blog</a></div>
+<div class="stuff-grid-div" id="stuff-grid-five"><a href="about.html">About</a></div>
+</div>
+</body>
+<script>
+/* latest article */
+const elem_article_latest = document.getElementById('article-latest');
+
+var year = Object.keys(article_list).pop();
+var month = Object.keys(article_list[year]).pop();
+var day = Object.keys(article_list[year][month]).pop();
+var name = article_list[year][month][day];
+
+elem_article_latest.innerHTML = 'Latest Article: ' + name;
+elem_article_latest.href = 'blog/article.html?y=' + year + '&m=' + month + '&d=' + day;
+</script>
+</html>
