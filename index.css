@@ -1,0 +1,158 @@
+:root {
+	--accent-blue: #608fbd;
+	--accent-light-blue: #ace;
+
+	--accent-red: #bd608f;
+	--accent-light-red: #eac;
+
+	--accent-summer-green: #8fbd60;
+	--accent-light-summer-green: #cea;
+
+	--accent-yellow: #bd8f60;
+	--accent-light-yellow: #eca;
+
+	--accent-winter-green: #60bd8f;
+	--accent-light-winter-green: #aec;
+
+	--accent-violet: #8f60bd;
+	--accent-light-violet: #cae;
+
+	--dark-0: #202126;
+	--dark-1: #28292f;
+	--dark-2: #31333a;
+	--dark-3: #383a42;
+
+	--light-0: #aeb5cd;
+	--light-1: #c3cbe7;
+	--light-2: #c8d0ec;
+	--light-3: #d7e0fe;
+}
+
+body {
+	margin: 0;
+	font-family: monospace;
+	font-size: 10pt;
+}
+
+div#content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+div#content div#content-area {
+	text-align: left;
+	padding: 1cm;
+}
+div#content div#content-area.grid {
+	display: inline-grid;
+}
+
+a {
+	text-decoration: none;
+	background-size: 0% 1px;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	transition:
+		background-size 100ms,
+		background-position 0s 100ms;
+}
+a:hover {
+	background-size: 100% 1px;
+	background-position: 100% 100%;
+}
+
+th,td {
+	padding: 2mm;
+	margin: 1mm;
+	border: 1px solid;
+	border-radius: 3px;
+}
+th {
+	text-align: center;
+}
+
+div.window {
+	padding: 1cm;
+	margin: 1mm;
+	border: 1px solid;
+	border-radius: 3px;
+}
+div.window p {
+	padding: 0;
+	margin: 0;
+}
+
+/* dark color scheme */
+body {
+	background-color: var(--dark-0);
+	color: var(--light-3);
+}
+
+a {
+	color: var(--light-0);
+	background-image: linear-gradient(var(--light-0) 0 0);
+}
+
+th,td {
+	border-color: var(--dark-3);
+}
+table tr:nth-child(odd) {
+	background-color: var(--dark-1);
+}
+table tr:nth-child(even) {
+	background-color: var(--dark-0);
+}
+
+div.window {
+	border-color: var(--dark-3);
+}
+
+/* link accents */
+tr#link-music {
+	color: var(--accent-red);
+}
+tr#link-music a {
+	color: var(--accent-light-red);
+	background-image: linear-gradient(var(--accent-light-red) 0 0);
+}
+
+tr#link-photos {
+	color: var(--accent-yellow);
+}
+tr#link-photos a {
+	color: var(--accent-light-yellow);
+	background-image: linear-gradient(var(--accent-light-yellow) 0 0);
+}
+
+tr#link-writing {
+	color: var(--accent-summer-green);
+}
+tr#link-writing a {
+	color: var(--accent-light-summer-green);
+	background-image: linear-gradient(var(--accent-light-summer-green) 0 0);
+}
+
+tr#link-software {
+	color: var(--accent-winter-green);
+}
+tr#link-software a {
+	color: var(--accent-light-winter-green);
+	background-image: linear-gradient(var(--accent-light-winter-green) 0 0);
+}
+
+tr#link-fun {
+	color: var(--accent-blue);
+}
+tr#link-fun a {
+	color: var(--accent-light-blue);
+	background-image: linear-gradient(var(--accent-light-blue) 0 0);
+}
+
+tr#link-misc {
+	color: var(--accent-violet);
+}
+tr#link-misc a {
+	color: var(--accent-light-violet);
+	background-image: linear-gradient(var(--accent-light-violet) 0 0);
+}

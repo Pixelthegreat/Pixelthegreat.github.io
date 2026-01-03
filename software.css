@@ -1,0 +1,58 @@
+div#content div#content-area.grid {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	justify-content: start;
+}
+
+div#header {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+div#header p {
+	max-width: 16cm;
+}
+div#header div#terminal-container {
+	display: grid;
+	place-items: center;
+}
+div#header div#terminal-container div#terminal {
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 3px;
+}
+
+div#project-list {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+div#project-list p {
+	max-width: 6cm;
+}
+
+div#project-info {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+div#project-info p {
+	max-width: 6cm;
+}
+
+/* dark color scheme */
+div.window {
+	color: var(--accent-winter-green);
+}
+
+div.window a {
+	color: var(--accent-light-winter-green);
+	background-image: linear-gradient(var(--accent-light-winter-green) 0 0);
+}
+
+div#header div#terminal-container div#terminal {
+	border-color: var(--dark-3);
+}
