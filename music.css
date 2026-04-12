@@ -1,0 +1,48 @@
+div#content div#content-area.grid {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	justify-content: start;
+}
+
+div#header {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+div#header p {
+	max-width: 16cm;
+}
+
+div#kator-fm {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+div#kator-fm p {
+	max-width: 16cm;
+}
+
+span#kator-fm-title {
+	display: inline-block;
+	text-align: center;
+	font-family: monospace;
+}
+
+div#album-joe div#album-gregor div#album-kator div#album-unknown {
+	a {
+		background-image: none;
+	}
+	text-align: center;
+	justify-content: center;
+}
+
+/* dark color scheme */
+div.window {
+	color: var(--accent-red);
+}
+div.window a {
+	color: var(--accent-light-red);
+	background-image: linear-gradient(var(--accent-light-red) 0 0);
+}

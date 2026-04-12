@@ -30,7 +30,7 @@
 
 body {
 	margin: 0;
-	font-family: monospace;
+	font-family: sans-serif;
 	font-size: 10pt;
 }
 
@@ -62,14 +62,29 @@ a:hover {
 	background-position: 100% 100%;
 }
 
-th,td {
-	padding: 2mm;
-	margin: 1mm;
+table {
+	width: 100%;
+	border-spacing: 0;
 	border: 1px solid;
 	border-radius: 3px;
 }
+th,td {
+	padding: 2mm;
+	margin: 1mm;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+}
+th:last-child, td:last-child {
+	border-right: none;
+}
+tr:last-child th, tr:last-child td {
+	border-bottom: none;
+}
 th {
 	text-align: center;
+}
+th *,td * {
+	vertical-align: middle;
 }
 
 div.window {
@@ -94,6 +109,9 @@ a {
 	background-image: linear-gradient(var(--light-0) 0 0);
 }
 
+table {
+	border-color: var(--dark-3);
+}
 th,td {
 	border-color: var(--dark-3);
 }

@@ -5,16 +5,19 @@ const projects = [
 	'bakey',
 	'eclair-os',
 	'emerald',
+	'lv2-plugins',
 ];
 const project_descriptions = {
 	'bakey': 'A simple and portable terminal emulator written in C.',
 	'eclair-os': 'A hobby operating system written in C for the X86 platform. It is at this point more of an artistic project.',
 	'emerald': 'A simple python-like scripting language designed around speed, efficiency and versatility.',
+	'lv2-plugins': 'A collection of audio plugins / effects in the LV2 format.',
 };
 const project_pages = {
 	'bakey': 'https://github.com/Pixelthegreat/bakey',
 	'eclair-os': 'https://github.com/Pixelthegreat/eclair-os',
 	'emerald': 'https://github.com/Pixelthegreat/emerald',
+	'lv2-plugins': 'https://github.com/Pixelthegreat/lv2-plugins',
 };
 
 function display_project(name) {
