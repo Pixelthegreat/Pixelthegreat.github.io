@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 10pt;
+}
+
+div#content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+div#content img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#header {
+	display: inline-block;
+	width: 600px;
+	font-size: 0px;
+}
+div#header a {
+	display: inline-block;
+	width: 150px;
+	height: 25px;
+	background-color: firebrick;
+	color: white;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 10pt;
+}
+div#header a:hover {
+	background-color: darkred;
+	text-decoration: underline;
+}
+
+div.post {
+	width: 540px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+div#hosts-post {
+	text-align: center;
+}
+
+a {
+	color: black;
+}
+a.host div {
+	display: inline-block;
+	margin: 3px;
+	border: 1px solid;
+}
+
+div.bio-top {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
+div.bio-top span {
+	flex: 1;
+}

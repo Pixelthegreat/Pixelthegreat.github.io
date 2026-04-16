@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Adler32 Checksum Calculator</title>
+	</head>
+	<body>
+		Adler32 Checksum Calculator<br>
+		<input id="input" type="text" placeholder="Text goes here"/><br>
+		<input id="output" type="text" placeholder="Output goes here"/><br>
+		<button onClick='calculateAdler32()'>Calculate</button>
+	</body>
+	<script>
+		const elem_input = document.getElementById('input');
+		const elem_output = document.getElementById('output');
+
+		const encoder = new TextEncoder();
+
+		function calculateAdler32() {
+
+			const bytes = encoder.encode(elem_input.value);
+
+			var a = 1;
+			var b = 0;
+
+			for (const d of bytes) {
+				a += d; b += a;
+			}
+			a %= 65521; b %= 65521;
+
+			v = (b << 16) | a;
+			elem_output.value = '0x'+v.toString(16);
+		}
+	</script>
+</html>
