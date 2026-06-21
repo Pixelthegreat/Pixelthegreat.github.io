@@ -7,6 +7,7 @@ const sections = {
 	'folklore': 'Folklore',
 	'music': 'Music',
 	'pitches': 'Pitches',
+	'programming': 'Programming',
 };
 
 /* Build section list */

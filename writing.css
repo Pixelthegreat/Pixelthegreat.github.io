@@ -34,6 +34,7 @@ div#section-area > p {
 }
 div#section-area > p p {
 	margin-bottom: 0.2cm;
+	text-align: justify;
 }
 
 /* dark color scheme */
