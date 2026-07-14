@@ -1,0 +1,8 @@
+div#content-area {
+	color: var(--accent-blue);
+}
+
+div#content-area a {
+	color: var(--accent-light-blue);
+	background-image: linear-gradient(var(--accent-light-blue) 0 0);
+}
