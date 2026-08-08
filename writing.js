@@ -3,6 +3,7 @@ const elem_section_area = document.getElementById('section-area');
 const elem_section_area_paragraph = document.getElementById('section-area-paragraph');
 
 const sections = {
+	'general': 'General',
 	'fiction': 'Fiction',
 	'folklore': 'Folklore',
 	'music': 'Music',
