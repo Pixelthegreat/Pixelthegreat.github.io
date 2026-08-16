@@ -37,6 +37,12 @@ div#section-area > p p {
 	text-align: justify;
 }
 
+span.odt2md-center-alignment {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
 /* dark color scheme */
 div.window {
 	color: var(--accent-summer-green);
