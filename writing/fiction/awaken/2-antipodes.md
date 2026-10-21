@@ -1,3 +1,6 @@
+# Awaken, Part 2: Antipodes
+_by Elliot Kohlmyer, September 20th, 2026_
+
 &emsp;The next day was fine, though I needed more room for my thoughts than what I could get. As I was walking out of the classroom, Mr. Berry called my name. I couldn't fathom why. I was cooperative. I was attentive. Actually, I wasn't very attentive. Maybe that was why. I turned around slowly and walked over to him.
 
 &emsp;"So, Mr. Rutten," he said with assertiveness.
