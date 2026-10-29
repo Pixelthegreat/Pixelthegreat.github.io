@@ -1,7 +1,7 @@
 # Awaken, Part 3: Gather, Weary
 _by Elliot Kohlmyer, October 21st, 2026_
 
-&emsp;A little key chain. It fell out of the telescope box as I was closing it up. It had a little solar system design and read, "I've been through galaxies and back!" I kept it in my pocket that day, and I completely forgot about it. I intended to attach it to something, but it slipped my mind as my mother came in. Her hands were full of grocery bags, and on top of those was a very delicately placed pizza box.
+My mother came in. Her hands were full of grocery bags, and on top of those was a very delicately placed pizza box.
 
 &emsp;"I got this to heat up for tonight. I hope you don't mind, I'm a little tired."
 

@@ -1,4 +1,6 @@
 # Awaken, Part 2
+_by Elliot Kohlmyer, September 20th, 2026_
+
 &emsp;_Awaken, Part 2: Antipodes_ can now be read [here](writing.html?page=fiction/awaken/index). My apologies for not releasing this part on September 16th as I initially planned. This past month was busier than I anticipated, between out of state trips and getting caught up in unrelated projects. This part will probably be the shortest of all of them. However, the next two should be a fair bit longer (at least in theory.)
 
 &emsp;Speaking of which, I now have a plan for the rest of the story:
