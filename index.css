@@ -48,6 +48,18 @@ div#content div#content-area.grid {
 	display: inline-grid;
 }
 
+div#index-flex {
+	display: flex;
+	flex-direction: row;
+	gap: 1cm;
+	align-items: center;
+}
+div#index-flex div#ascii-area {
+	font-family: monospace;
+	font-size: 11pt;
+	cursor: default;
+}
+
 a {
 	text-decoration: none;
 	background-size: 0% 1px;

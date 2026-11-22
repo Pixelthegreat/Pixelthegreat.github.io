@@ -32,6 +32,12 @@ div#section-area > p {
 	margin-right: auto;
 	width: 10cm;
 }
+div#section-area > p pre {
+	border: 1px solid;
+	border-radius: 3px;
+	overflow: scroll;
+	padding: 2mm;
+}
 div#section-area > p p {
 	margin-bottom: 0.2cm;
 	text-align: justify;
@@ -43,6 +49,10 @@ span.odt2md-center-alignment {
 	text-align: center;
 }
 
+p:has(> span.note) {
+	display: none;
+}
+
 /* dark color scheme */
 div.window {
 	color: var(--accent-summer-green);
@@ -50,4 +60,9 @@ div.window {
 div.window a {
 	color: var(--accent-light-summer-green);
 	background-image: linear-gradient(var(--accent-light-summer-green) 0 0);
+}
+
+div#section-area > p pre {
+	background-color: var(--dark-1);
+	border-color: var(--dark-3);
 }

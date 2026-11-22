@@ -37,6 +37,25 @@ if (page !== null) {
 	request.addEventListener('load', () => {
 		elem_section_area_paragraph.innerHTML = marked.parse(request.responseText);
 	});
-	request.open('GET', `writing/${page}.md`);
+	request.open('GET', `writing/${page}.md`, false);
 	request.send();
+}
+
+/* Setup notes */
+const elem_sups = document.getElementsByTagName('sup');
+const elem_notes = document.getElementsByClassName('note');
+
+for (let i = 0; i < elem_sups.length; i++) {
+
+	let sup = elem_sups[i];
+	let note = elem_notes[sup.innerText-1];
+
+	sup.innerHTML = `<a href="javascript:void(0)">${sup.innerText}</a>`;
+
+	sup.addEventListener('mouseenter', () => {
+		note.parentElement.style.display = 'block';
+	});
+	sup.addEventListener('mouseleave', () => {
+		note.parentElement.style.display = 'none';
+	});
 }
